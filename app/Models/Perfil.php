@@ -8,4 +8,9 @@ use Illuminate\Database\Eloquent\Model;
 class Perfil extends Model
 {
     use HasFactory;
+    //Relacion 1:1 de Perfil con Usuario
+    public function usuario(){
+
+        return $this->belongsTo(User::class,'user_id');
+    }
 }

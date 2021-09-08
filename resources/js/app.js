@@ -26,6 +26,7 @@ Vue.use(VueSweetalert2);
 Vue.config.ignoredElements = ['trix-editor', 'trix-toolbar'];
 Vue.component('fecha-receta', require('./components/FechaReceta.vue').default);
 Vue.component('eliminar-receta', require('./components/EliminarReceta.vue').default);
+Vue.component('like-button',  require('./components/LikeButton.vue').default);
 console.log(Vue.prototype);
 
 
@@ -38,3 +39,7 @@ console.log(Vue.prototype);
 const app = new Vue({
     el: '#app',
 });
+
+$('.clap-btn').on('click', function() {
+    $(this).toggleClass('clap-active');
+ });

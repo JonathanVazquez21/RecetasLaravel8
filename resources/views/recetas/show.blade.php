@@ -47,6 +47,10 @@
           {!! $receta->preparacion !!}
       </div>
 
+      <!-- Componente de VueJs -->
+        <like-button>
+          
+        </like-button>
 
 
   </div>
