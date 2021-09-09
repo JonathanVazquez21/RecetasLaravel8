@@ -2,8 +2,9 @@
 
 namespace App\Models;
 
-use Illuminate\Database\Eloquent\Factories\HasFactory;
+use App\Models\User;
 use Illuminate\Database\Eloquent\Model;
+use Illuminate\Database\Eloquent\Factories\HasFactory;
 
 class Receta extends Model
 {
@@ -26,7 +27,11 @@ class Receta extends Model
 
    //Likes que ha recibido una receta
    public function likes(){
-      return $this->belongsToMany(User::class, 'likes_receta');
+      return $this->belongsToMany(User::class,
+      'likes_receta',
+      'user_id',
+      'receta_id');
    }
+
 
 }

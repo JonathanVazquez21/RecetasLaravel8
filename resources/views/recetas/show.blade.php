@@ -47,10 +47,15 @@
           {!! $receta->preparacion !!}
       </div>
 
-      <!-- Componente de VueJs -->
-        <like-button>
-          
-        </like-button>
+      <div class="justify-content-center row text-center">
+        
+      <!-- Componentes de VueJs -->
+          <like-button receta-id="{{$receta->id}}" like="{{$like}}" likes="{{$likes}}">
+            
+          </like-button>
+        
+      </div>
+    
 
 
   </div>
