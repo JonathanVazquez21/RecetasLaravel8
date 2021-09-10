@@ -2,8 +2,10 @@
 
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\LikesController;
+use App\Http\Controllers\InicioController;
 use App\Http\Controllers\PerfilController;
 use App\Http\Controllers\RecetaController;
+use App\Http\Controllers\CategoriaController;
 
 /*
 |--------------------------------------------------------------------------
@@ -16,11 +18,10 @@ use App\Http\Controllers\RecetaController;
 |
 */
 
+Route::get('/',[InicioController::class, 'index'])->name('inicio.index');
+
 
 Auth::routes();
-
-
-
  Route::get('/recetas', [RecetaController::class, 'index'])->name('recetas.index');
  Route::get('/recetas/create', [RecetaController::class, 'create'])->name('recetas.create');
  Route::post('/recetas', [RecetaController::class, 'store'])->name('recetas.store');
@@ -28,6 +29,11 @@ Auth::routes();
  Route::get('/recetas/{receta}/edit',[RecetaController::class, 'edit'])->name('recetas.edit');
  Route::put('/recetas/{receta}',[RecetaController::class, 'update'])->name('recetas.update');
  Route::delete('/recetas/{receta}',[RecetaController::class, 'destroy'])->name('recetas.destroy');
+
+ Route::get('/categoria/{categoriaReceta}', [CategoriaController::class, 'show'])->name('categorias.show');
+//Buscador de recetas
+Route::get('/buscar', [RecetaController::class, 'search'])->name('buscar.show');
+
 
 //Route::resource('recetas', RecetaController::class);
 

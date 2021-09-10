@@ -4,6 +4,7 @@
  * building robust, powerful web applications using Vue and Laravel.
  */
 
+import 'owl.carousel';
 import VueSweetalert2 from 'vue-sweetalert2';
 import 'sweetalert2/dist/sweetalert2.min.css';
 
@@ -40,6 +41,25 @@ const app = new Vue({
     el: '#app',
 });
 
-$('.clap-btn').on('click', function() {
-    $(this).toggleClass('clap-active');
+
+
+ jQuery(document).ready(function(){
+   jQuery('.owl-carousel').owlCarousel({
+       margin:10,
+       loop: true,
+       autoplay:true,
+       autoplayHoverPause:true,
+       nav:false,
+       responsive:{
+           0:{
+               items:1
+           },
+           600:{
+               items:2
+           },
+           1000:{
+               items:3
+           }
+       }
+   });
  });
