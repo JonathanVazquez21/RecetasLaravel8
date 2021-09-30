@@ -4,13 +4,13 @@ Proyecto de Recetas donde puedes compartir tus recetas favoritas y también guar
 
 ### Lenguaje de programación, Frameworks y Librerias
 
-- **[Php (Laravel 8)]**
-- **[JavaScript (VueJs)]**
-- **[OWL Carousel]**
-- **[MomentJs]**
-- **[JQuery]**
-- **[Axios]**
-- **[sweetalert2]**
+- **Php (Laravel 8)**
+- **JavaScript (VueJs)**
+- **OWL Carousel**
+- **MomentJs**
+- **JQuery**
+- **Axios**
+- **sweetalert2**
 
 
 
