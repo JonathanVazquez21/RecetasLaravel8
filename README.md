@@ -2,7 +2,7 @@
 
 Proyecto de Recetas donde puedes compartir tus recetas favoritas y también guardar tus recetas que mas te gusten.
 
-### Lenguaje de programación, Frameworks y Librerias
+### Lenguaje de programación, Frameworks y Librerias.
 
 - **Php (Laravel 8)**
 - **JavaScript (VueJs)**
@@ -12,5 +12,8 @@ Proyecto de Recetas donde puedes compartir tus recetas favoritas y también guar
 - **Axios**
 - **sweetalert2**
 
+### Screenshot
 
+
+![Recetas](https://user-images.githubusercontent.com/88862460/135532718-f61a3bef-fa79-4bef-9de1-1ceb64e0adc5.png)
 
